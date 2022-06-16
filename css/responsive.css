@@ -801,7 +801,7 @@
         overflow-x: scroll;
     }
     .tab-title-detail .nav-link{
-        min-width: max-content;
+        min-width: 190px;
         display: block;
     }
     .tab-title-detail{
@@ -995,6 +995,7 @@
         width: 100%!important;
         height: auto!important;
     }
+    .wrap-main-right .wrapfile-project{display: none;}
 }
 
 @media (max-width:850px) {
