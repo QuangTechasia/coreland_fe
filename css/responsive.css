@@ -801,7 +801,7 @@
         overflow-x: scroll;
     }
     .tab-title-detail .nav-link{
-        min-width: max-content;
+        min-width: 190px;
     }
     .tab-title-detail{
         transition: all .3s
