@@ -138,10 +138,11 @@
     }
 
     .item-blog .image-blog {
-        min-width: 125px;
+        min-width: 100px;
         max-width: 125px;
-        width: 125px;
-        height: 85px;
+        width: 100px;
+        height: 72px;
+
     }
 
     .wrap-main-right .wrap-blog-right .item-blog .image-blog img {
@@ -244,6 +245,9 @@
     }
     .wrap-share ul li:last-child{
         margin-right: 0;
+    }
+    .wrap-main-right .item-right .wrap-blog-right .content-blog-list h5 {
+        -webkit-line-clamp: 3;
     }
 }
 
@@ -774,7 +778,7 @@
     #blog-main.wrap-blog-index.pt-50{
         padding-top: 1px!important;
     }
-    .wrap-nav-control .toggle-tab-mobile{
+    /* .wrap-nav-control .toggle-tab-mobile{
         background: var(--color-blue-main);
         width: 35px;
         height: 35px;
@@ -785,13 +789,19 @@
     .tab-title-detail{
         box-shadow: none;
         background: transparent;
-    }
+    } */
     .wrap-nav-control .toggle-tab-mobile i{
         font-size: 20px;
         color: #FFF;
     }
-    .tab-title-detail ul.nav{
+    /* .tab-title-detail ul.nav{
         display: none;
+    } */
+    .tab-title-detail ul.nav {
+        overflow-x: scroll;
+    }
+    .tab-title-detail .nav-link{
+        min-width: max-content;
     }
     .tab-title-detail{
         transition: all .3s
@@ -817,6 +827,10 @@
     }
     .title-main .name-title.margin-b-25{
         margin-bottom: 15px;
+    }
+    .item-why-core>p,
+    .wrap-core .wrap-item-core>p{
+        text-align: center;
     }
     
 }
@@ -874,6 +888,8 @@
 
     .wrap-core .wrap-item-core {
         padding-bottom: 25px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     .wrap-main-right .item-right .item-project .box-image {
@@ -1645,6 +1661,8 @@
     #banner-main.banner-index #slide-main .item img.small{
         display: block!important;
     }
+    #main .container .slide-list-detail-bottom .container{padding: 0;}
+    #main .container .slide-list-detail-bottom .owl-carousel.owl-drag .owl-item{padding-left: 0; padding-right: 0;}
 }
 
 @media (max-width:540px) {
@@ -1733,6 +1751,13 @@
     }
     iframe{
         height: 300px!important;
+    }
+    .tab-title-detail ul.nav{
+        height: 55px;
+    }
+    .tab-title-detail .nav-link{
+        font-size: 13px;
+        padding: 0 10px;
     }
 }
 
