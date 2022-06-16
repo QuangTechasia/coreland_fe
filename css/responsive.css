@@ -802,7 +802,8 @@
     }
     .tab-title-detail .nav-link{
         min-width: max-content;
-        display: block;
+        white-space: pre;
+        display: flex;
     }
     .tab-title-detail{
         transition: all .3s
